@@ -21,8 +21,7 @@ $(document).ready(function() {
             { src: 'images/slide-6.jpg' },
             { src: 'images/slide-7.jpg' },
             { src: 'images/slide-8.jpg' },
-            { src: 'images/slide-9.jpg' },
-            { src: 'images/slide-10.jpg' }
+            { src: 'images/slide-9.jpg' }
         ],
         timer: false,
         animation: [ 'kenburns', ]
