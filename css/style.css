@@ -276,7 +276,6 @@ footer {
   padding-top: 10px;
 }
 
-
 /* feature section */
 #feature {
   background: #f1c11a;
@@ -347,6 +346,12 @@ footer {
   background: #f1c11a;
 }
 
+/* Center the video */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
 
 /* footer section  */
 footer {
@@ -382,11 +387,12 @@ footer a:hover {
 /* modal */
 .modal-dialog .modal-content {
   background: url('../images/modal-bg.jpg') no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center center;
   border-radius: 0;
   text-align: center;
-  padding: 100px 50px 100px 50px;
+  padding: 100px 15px 100px 15px;
   position: relative;
 }
 
