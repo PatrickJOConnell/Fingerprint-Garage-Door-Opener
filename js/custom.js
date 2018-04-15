@@ -14,7 +14,11 @@ $(document).ready(function() {
     $('body').vegas({
         slides: [
             { src: 'images/slide-1.jpg' },
-            { src: 'images/slide-2.jpg' }
+            { src: 'images/slide-2.jpg' },
+            { src: 'images/slide-3.jpg' }, 
+            { src: 'images/slide-5.jpg' },
+            { src: 'images/slide-6.jpg' },
+            { src: 'images/slide-7.jpg' }
         ],
         timer: false,
         transition: [ 'zoomOut', ]
