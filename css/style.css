@@ -5,7 +5,9 @@ body
    font-family: 'Rajdhani', sans-serif;
     font-weight: 400;
 	}
-
+#page-wrap{
+  margin: 1rem auto;
+}
 html,body {
   width: 100%;
   overflow-x: hidden;
@@ -376,6 +378,7 @@ footer a:hover {
   stroke: white;
   stroke-width: 0;
 }
+
 
 /* modal */
 .modal-dialog .modal-content {
