@@ -1,53 +1,58 @@
 
- /* jQuery Pre loader
-  -----------------------------------------------*/
-$(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+/* jQuery Pre loader
+ -----------------------------------------------*/
+$(window).load(function () {
+  $('.preloader').fadeOut(1000); // set duration in brackets    
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   /* Home Slideshow Vegas
   -----------------------------------------------*/
-  $(function() {
+  $(function () {
     $('body').vegas({
-        slides: [
-            { src: 'images/slide-1.jpg' },
-            { src: 'images/slide-2.jpg' },
-            { src: 'images/slide-3.jpg' }, 
-            { src: 'images/slide-4.jpg' }, 
-            { src: 'images/slide-5.jpg' },
-            { src: 'images/slide-6.jpg' },
-            { src: 'images/slide-7.jpg' },
-            { src: 'images/slide-8.jpg' },
-            { src: 'images/slide-9.jpg' }
-        ],
-        timer: false,
-        animation: [ 'kenburns', ]
+      delay: 15000,
+      slides: [
+        { src: 'images/slide-1.jpg' },
+        { src: 'images/slide-2.jpg' },
+        { src: 'images/slide-3.jpg' },
+        { src: 'images/slide-4.jpg' },
+        { src: 'images/slide-5.jpg' },
+        { src: 'images/slide-6.jpg' },
+        { src: 'images/slide-7.jpg' },
+        { src: 'images/slide-8.jpg' },
+        { src: 'images/slide-9.jpg' },
+        { src: 'images/slide-10.jpg' }
+
+      ],
+      timer: false,
+      animation: ['kenburns',]
+
+
     });
   });
 
 
-   /* Back top
-  -----------------------------------------------*/
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-        $('.go-top').fadeIn(200);
-        } else {
-          $('.go-top').fadeOut(200);
-        }
-        });   
-        // Animate the scroll to top
-      $('.go-top').click(function(event) {
-        event.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 300);
-      })
-      
+  /* Back top
+ -----------------------------------------------*/
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('.go-top').fadeIn(200);
+    } else {
+      $('.go-top').fadeOut(200);
+    }
+  });
+  // Animate the scroll to top
+  $('.go-top').click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 300);
+  })
+
 
   /* wow
   -------------------------------*/
   new WOW({ mobile: false }).init();
 
-  });
+});
 
