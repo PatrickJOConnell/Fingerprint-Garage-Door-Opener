@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -1681,9 +1676,9 @@
 	}
 
 	body, input, select, textarea {
-		font-family: 'Rajdhani', sans-serif;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.65;
 	}
 
@@ -1848,9 +1843,7 @@
 	}
 
 		a:hover {
-			color: #f1c11a;
-			border-color: transparent;
-
+			color: #47D3E5;
 		}
 
 	strong, b {
@@ -1914,9 +1907,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		border: 3px solid #ffffff;
-    	border-radius: 0px;
-		color: #ffffff;
+		border: 0;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2016,8 +2007,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #f1c11a;
-			color: #f1c11a !important;
+			box-shadow: inset 0 0 0 1px #47D3E5;
+			color: #47D3E5 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2026,8 +2017,8 @@
 		button:active,
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
-			box-shadow: inset 0 0 0 1px #f1c11a;
-			color: #f1c11a !important;
+			box-shadow: inset 0 0 0 1px #47D3E5;
+			color: #47D3E5 !important;
 		}
 
 		input[type="submit"].special,
@@ -2045,7 +2036,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #f1c11a;
+				background-color: #47D3E5;
 			}
 
 			input[type="submit"].special:active,
@@ -2053,7 +2044,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #f1c11a;
+				background-color: #1ebdd1;
 			}
 
 /* Form */
@@ -2338,8 +2329,8 @@
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #f1c11a;
-			box-shadow: 0 0 0 1px #f1c11a;
+			border-color: #47D3E5;
+			box-shadow: 0 0 0 1px #47D3E5;
 		}
 
 	.select-wrapper:before {
@@ -2365,8 +2356,8 @@
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #f1c11a;
-		box-shadow: 0 0 0 1px #f1c11a;
+		border-color: #47D3E5;
+		box-shadow: 0 0 0 1px #47D3E5;
 	}
 
 	::-webkit-input-placeholder {
@@ -2440,14 +2431,14 @@
 	}
 
 	a.icon.style2:hover:before {
-		box-shadow: inset 0 0 0 1px #f1c11a;
-		color: #f1c11a;
+		box-shadow: inset 0 0 0 1px #47D3E5;
+		color: #47D3E5;
 	}
 
 	a.icon.style2:active:before {
 		background-color: rgba(71, 211, 229, 0.1);
-		box-shadow: inset 0 0 0 1px #f1c11a;
-		color: #f1c11a;
+		box-shadow: inset 0 0 0 1px #47D3E5;
+		color: #47D3E5;
 	}
 
 /* Image */
@@ -6186,7 +6177,7 @@
 		}
 
 			.gallery.style1 a:hover {
-				color: #f1c11a;
+				color: #47D3E5;
 			}
 
 		.gallery.style1 strong, .gallery.style1 b {
@@ -6225,8 +6216,8 @@
 			.gallery.style1 input[type="button"]:hover,
 			.gallery.style1 button:hover,
 			.gallery.style1 .button:hover {
-				box-shadow: inset 0 0 0 1px #f1c11a;
-				color: #f1c11a !important;
+				box-shadow: inset 0 0 0 1px #47D3E5;
+				color: #47D3E5 !important;
 			}
 
 			.gallery.style1 input[type="submit"]:active,
@@ -6235,8 +6226,8 @@
 			.gallery.style1 button:active,
 			.gallery.style1 .button:active {
 				background-color: rgba(71, 211, 229, 0.2);
-				box-shadow: inset 0 0 0 1px #f1c11a;
-				color: #f1c11a !important;
+				box-shadow: inset 0 0 0 1px #47D3E5;
+				color: #47D3E5 !important;
 			}
 
 			.gallery.style1 input[type="submit"].special,
@@ -6254,7 +6245,7 @@
 				.gallery.style1 input[type="button"].special:hover,
 				.gallery.style1 button.special:hover,
 				.gallery.style1 .button.special:hover {
-					background-color: #f1c11a;
+					background-color: #47D3E5;
 				}
 
 				.gallery.style1 input[type="submit"].special:active,
@@ -6516,7 +6507,7 @@
 		}
 
 			.gallery.style2 a:hover {
-				color: #f1c11a;
+				color: #47D3E5;
 			}
 
 		.gallery.style2 strong, .gallery.style2 b {
@@ -6555,8 +6546,8 @@
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #f1c11a;
-				color: #f1c11a !important;
+				box-shadow: inset 0 0 0 1px #47D3E5;
+				color: #47D3E5 !important;
 			}
 
 			.gallery.style2 input[type="submit"]:active,
@@ -6565,8 +6556,8 @@
 			.gallery.style2 button:active,
 			.gallery.style2 .button:active {
 				background-color: rgba(71, 211, 229, 0.2);
-				box-shadow: inset 0 0 0 1px #f1c11a;
-				color: #f1c11a !important;
+				box-shadow: inset 0 0 0 1px #47D3E5;
+				color: #47D3E5 !important;
 			}
 
 			.gallery.style2 input[type="submit"].special,
@@ -6584,7 +6575,7 @@
 				.gallery.style2 input[type="button"].special:hover,
 				.gallery.style2 button.special:hover,
 				.gallery.style2 .button.special:hover {
-					background-color: #f1c11a;
+					background-color: #47D3E5;
 				}
 
 				.gallery.style2 input[type="submit"].special:active,
@@ -8087,7 +8078,7 @@
 			}
 
 				#wrapper > .invert a:hover {
-					color: #f1c11a;
+					color: #47D3E5;
 				}
 
 			#wrapper > .invert strong, #wrapper > .invert b {
@@ -8130,8 +8121,8 @@
 				#wrapper > .invert input[type="button"]:hover,
 				#wrapper > .invert button:hover,
 				#wrapper > .invert .button:hover {
-					box-shadow: inset 0 0 0 1px #f1c11a;
-					color: #f1c11a !important;
+					box-shadow: inset 0 0 0 1px #47D3E5;
+					color: #47D3E5 !important;
 				}
 
 				#wrapper > .invert input[type="submit"]:active,
@@ -8140,8 +8131,8 @@
 				#wrapper > .invert button:active,
 				#wrapper > .invert .button:active {
 					background-color: rgba(71, 211, 229, 0.2);
-					box-shadow: inset 0 0 0 1px #f1c11a;
-					color: #f1c11a !important;
+					box-shadow: inset 0 0 0 1px #47D3E5;
+					color: #47D3E5 !important;
 				}
 
 				#wrapper > .invert input[type="submit"].special,
@@ -8159,7 +8150,7 @@
 					#wrapper > .invert input[type="button"].special:hover,
 					#wrapper > .invert button.special:hover,
 					#wrapper > .invert .button.special:hover {
-						background-color: #f1c11a;
+						background-color: #47D3E5;
 					}
 
 					#wrapper > .invert input[type="submit"].special:active,
@@ -8193,8 +8184,8 @@
 				#wrapper > .invert input[type="url"]:focus,
 				#wrapper > .invert select:focus,
 				#wrapper > .invert textarea:focus {
-					border-color: #f1c11a;
-					box-shadow: 0 0 0 1px #f1c11a;
+					border-color: #47D3E5;
+					box-shadow: 0 0 0 1px #47D3E5;
 				}
 
 			#wrapper > .invert .select-wrapper:before {
@@ -8220,8 +8211,8 @@
 
 			#wrapper > .invert input[type="checkbox"]:focus + label:before,
 			#wrapper > .invert input[type="radio"]:focus + label:before {
-				border-color: #f1c11a;
-				box-shadow: 0 0 0 1px #f1c11a;
+				border-color: #47D3E5;
+				box-shadow: 0 0 0 1px #47D3E5;
 			}
 
 			#wrapper > .invert ::-webkit-input-placeholder {
@@ -8249,14 +8240,14 @@
 			}
 
 			#wrapper > .invert a.icon.style2:hover:before {
-				box-shadow: inset 0 0 0 1px #f1c11a;
-				color: #f1c11a;
+				box-shadow: inset 0 0 0 1px #47D3E5;
+				color: #47D3E5;
 			}
 
 			#wrapper > .invert a.icon.style2:active:before {
 				background-color: rgba(71, 211, 229, 0.1);
-				box-shadow: inset 0 0 0 1px #f1c11a;
-				color: #f1c11a;
+				box-shadow: inset 0 0 0 1px #47D3E5;
+				color: #47D3E5;
 			}
 
 			#wrapper > .invert ul.alt li {
