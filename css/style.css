@@ -17,7 +17,7 @@ html {
   font-size: 100%;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h9 {
   font-weight: 500;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
@@ -29,6 +29,12 @@ h1 {
 }
 
 h2 {
+  color: #686565;
+  ;
+  padding-bottom: 10px;
+}
+
+h9 {
   color: #ffffff;
   padding-bottom: 10px;
 }
@@ -618,6 +624,10 @@ footer a:hover {
   h3 {
     font-size: 0.8rem;
     line-height: 1.3rem;
+  }
+  
+  h9 {
+    font-size: 3rem;
   }
 
 }

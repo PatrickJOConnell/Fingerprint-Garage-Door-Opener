@@ -1,6 +1,11 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
+/*
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 /* Reset */
 
@@ -12,6 +17,8 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -2412,7 +2419,7 @@
 
 		.icon.major {
 			display: block;
-			margin: 0 0 1rem 0;
+			margin: 0 0 2rem 0;
 		}
 
 			.icon.major:before {
@@ -2537,11 +2544,14 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			
+
 		}
 
 			ul.icons li {
 				display: inline-block;
 				padding: 0 0.75rem 0 0;
+				
 			}
 
 				ul.icons li:last-child {
@@ -2552,6 +2562,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+
 		}
 
 			ul.actions li {
@@ -2683,6 +2694,7 @@
 
 	ul.alt li {
 		border-top-color: rgba(0, 0, 0, 0.2);
+
 	}
 
 /* Section/Article */

@@ -12,7 +12,7 @@ $(document).ready(function () {
   -----------------------------------------------*/
   $(function () {
     $('body').vegas({
-      delay: 10000,
+      delay: 13000,
       slides: [
         { src: 'images/slide-1.jpg' },
         { src: 'images/slide-2.jpg' },
