@@ -240,7 +240,24 @@ footer {
 #home .home-thumb {
   text-align: center;
 }
+.butt2 {
+	position: relative;
+	background-color: #f1c11a;
+  transition: .5s ease;
+  left: 5px;
+	top: 200px;
+   
+    color: white;
+	padding: 15px 20px;
+	border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin: 10px 10px;
 
+    cursor: pointer;
+}
 #home .btn {
     background: transparent;
     border: 3px solid #ffffff;

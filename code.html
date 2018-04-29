@@ -4,7 +4,7 @@
 
 <head>
 	<title>Code</title>
-	<!-- Add Logo -->
+	<!-- Add Logo to the Tab -->
 	<link rel="icon" type="image/png" href="images\favicon-32x32.png" sizes="32x32" />
 
 	<meta charset="utf-8" />
@@ -27,22 +27,21 @@
 	<link rel="stylesheet" href="css/et-line-font.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 
+
 	<link rel="stylesheet" href="css/vegas.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-
+	<!-- Start of body -->
 	<!-- Wrapper -->
 	<div id="wrapper" class="divided">
 
@@ -50,21 +49,22 @@
 		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
 				<h1>Code</h1>
-				<p class="major">This project utilizes a fingerprint scanning unit (FPS GT-521F32) to scan and identify fingerprints and open or close
-					the garage door with verified fingerprint IDs. This process is controlled by Kuman UNO R3 Development Board(s) and programmed
-					with open-source
-					<strong></strong>Arduino Software (ARDUINO 1.8.5)</p>
+				<p class="major">The main purpose of the code is to allow communication between the circuit and the model to achieve full functionality of automatic Fingerprint Garage Door.</p>
 
-				<p>This project utilizes a fingerprint scanning unit (FPS GT-521F32) to scan and identify fingerprints and open or close
-					the garage door with verified fingerprint IDs. This process is controlled by Kuman UNO R3 Development Board(s) and programmed
-					with open-source
-					<strong></strong>Arduino Software (ARDUINO 1.8.5)</strong>.</p>
+				<p> 
+					The code achieves this by two programs, GarageFingerprint.ino and GarageMotorRunner.ino, running concurrently on the circuit. </p>
 
 				<ul class="actions vertical">
 					<li>
-						<a href="#first" class="button big wide smooth-scroll-middle">Get Started</a>
+						<a href="#first" class="button btn big wide smooth-scroll-middle">Learn More</a>
 					</li>
 				</ul>
+
+				<!-- new scroll down button -->
+				<a href="#first" class="butt smooth-scroll-middle">
+					<i class="fa fa-angle-down"></i>
+				</a>
+
 			</div>
 			<div class="image">
 				<img src="code-pictures/banner.jpg" alt="" />
@@ -73,220 +73,572 @@
 
 
 		<!-- Items -->
-		<section class="wrapper style1 align-center">
+		<section class="wrapper style1 align-center" id="first">
 			<!-- style2 (change back to style 1)-->
 			<div class="inner">
 				<h2>Snapshot of Fingerprint Garage</h2>
 				<!--	<p>Important aspect of the code </p> -->
 				<div class="items style1 medium onscroll-fade-in">
 					<section>
-						<span class="icon style2  major fas fa-user-secret"></span>
-						<p> Fingerprints of the Users' are encrypted </p>
+						<span class="icon style2 major fa fa-group"></span>
+						<p> 200 Unique Fingerprints </p>
 					</section>
 					<section>
-						<span class="icon style2 major fas fa-github"></span>
-						<p> Open-source on GitHub </p>
-
+						<span class="icon style2  major fas fa-user-secret"></span>
+						<p> Encrypted Fingerprints </p>
 					</section>
 
+					<section>
+						<span class="icon style2 major fas fa-github"></span>
+						<p> Open Source on GitHub </p>
+					</section>
 
 					<section>
 						<span class="icon style2 major fa fa-hand-o-up"></span>
-						<p> Easily customize fingerprints</p>
-
+						<p> Easily Customize Fingerprints</p>
 					</section>
 
 					<section>
 						<span class="icon style2 major fa fa-lightbulb-o"></span>
-						<p> Sensor visible in the dark </p>
-
+						<p> Sensor Visible in Dark </p>
 					</section>
 
 					<section>
 						<span class="icon style2 major fa fa-moon-o"></span>
-						<p> Times out in minutes </p>
-
+						<p> Times Out in 2 Minutes </p>
 					</section>
+
 					<section>
 						<span class="icon style2 major fa-refresh"></span>
-						<p> Easily reset fingerprint database </p>
-
+						<p> Reset Fingerprint Database with </br> just a Button </p>
 					</section>
 					<section>
-						<!--		<i class="icon style2 major fa material-icons"style="font-size:36px;">fingerprint</i> -->
-						<span class="icon style2 major fa fa-group"></span>
-						<p> 200 unique fingerprints </p>
-
+						<span class="icon style2 major fa-hourglass-half"></span>
+						<p> Current Status of the Garage Panel Updated in Real Time </p>
 					</section>
-					<section>
-						<span class="icon style2 major fa-refresh"></span>
-						<p> Placeholder </p>
 
+					<section>
+						<span class="icon style2 major fa-code"></span>
+						<p> Easy to Understand and Maintain Code </p>
 					</section>
-					<section>
-						<span class="icon major fa-hashtag"></span>
-						<p> Placeholder </p>
-
 
 				</div>
 			</div>
-			</section>
+		</section>
 
-			<!-- Additional Elements -->
-			<section class="wrapper style1 align-center">
-				<div class="inner">
-					<h2>About Code</h2>
-					<div class="index align-left">
+		<!-- Additional Elements -->
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>About Code</h2>
+				<div class="index align-left">
 
-						<!-- Box -->
-						<section>
-							<header>
-								<h3>Programming Environment</h3>
-							</header>
-							<div class="content">
+					<!-- Box -->
+					<section>
+						<header>
+							<h3>Programming Environment</h3>
+						</header>
+						<div class="content">
 
-								<div class="box">
-									<p>This process is controlled by Kuman UNO R3 Development Board(s) and programmed with the open-source Arduino Integrated
-										Development Environment or
-										<strong>Arduino Software (ARDUINO 1.8.5)</strong>. The IDE contains a text editor for writing code, a text console, a message
-										area as well as a toolbar and menubar with common functions. This environment is used to communicate with the UNO
-										R3 hardware and upload programs to them.
-									</p>
-								</div>
-
+							<div class="box">
+								<p>This process is controlled by Kuman UNO R3 Development Board(s) and programmed with the open-source Arduino Integrated
+									Development Environment or
+									<strong>Arduino Software (ARDUINO 1.8.5)</strong>. The IDE contains a text editor for writing code, a text console, a message
+									area as well as a toolbar and menubar with common functions. This environment is used to communicate with the UNO
+									R3 hardware and upload programs to them.
+								</p>
 							</div>
-						</section>
+
+						</div>
+					</section>
 
 
-						<!-- Text -->
-						<section>
-							<header>
-								<h3>Purpose of Code:
-									<br/> Garage Motor Module </h3>
-							</header>
-							<div class="content">
-								<section>
+					<!-- Text -->
+					<section>
+						<header>
+							<h3>Purpose of Code:
+								<br/> Garage Motor Module </h3>
+						</header>
+						<div class="content">
+							<section>
 
-									<div class="content">
+								<div class="content">
 
-										<pre><code>
-		i = 0;
-		while (!deck.isInOrder()) {
-			print 'Iteration ' + i;
-			deck.shuffle();
-			i++;
-		}
-							
-		print 'It took ' + i + ' iterations to sort the deck.';
+									<pre><code>
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;
+&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">button_1</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">button_2</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">button_3</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">3</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Motor 1 outputs</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">4</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">5</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">8</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Motor 2 outputs</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">10</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">11</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+
+<font color="#00979c">void</font> <font color="#000000">opengarage</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; The higher the value, the faster the motor (1000 is near the max speed)</font>
+&nbsp;<font color="#000000">garageMotor</font><font color="#434f54">.</font><font color="#d35400">setSpeed</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;<font color="#434f54">&#47;&#47; motor one steps in one direction</font>
+&nbsp;<font color="#000000">garageMotor</font><font color="#434f54">.</font><font color="#d35400">step</font><font color="#000000">(</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<font color="#000000">garageMotor2</font><font color="#434f54">.</font><font color="#d35400">setSpeed</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; motor 2 steps in the opposite direction</font>
+&nbsp;<font color="#000000">garageMotor2</font><font color="#434f54">.</font><font color="#d35400">step</font><font color="#000000">(</font><font color="#434f54">-</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#000000">}</font>
+
+
+<font color="#00979c">void</font> <font color="#000000">closegarage</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;<font color="#000000">garageMotor</font><font color="#434f54">.</font><font color="#d35400">setSpeed</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; motor one steps in one direction</font>
+&nbsp;<font color="#000000">garageMotor</font><font color="#434f54">.</font><font color="#d35400">step</font><font color="#000000">(</font><font color="#434f54">-</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<font color="#000000">garageMotor2</font><font color="#434f54">.</font><font color="#d35400">setSpeed</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; motor two steps in the opposite direction</font>
+&nbsp;<font color="#000000">garageMotor2</font><font color="#434f54">.</font><font color="#d35400">step</font><font color="#000000">(</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; check for serial input from the fingerprint module</font>
+&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">available</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">&gt;</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">inc</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; an open&#47;close request has been sent</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">inc</font> <font color="#434f54">==</font> <font color="#000000">1</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">garageopen</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#000000">i</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">i</font> <font color="#434f54">&lt;</font> <font color="#000000">steps</font><font color="#000000">;</font> <font color="#000000">i</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">closegarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#000000">i</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">i</font> <font color="#434f54">&lt;</font> <font color="#000000">steps</font><font color="#000000">;</font> <font color="#000000">i</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">opengarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">garageopen</font> <font color="#434f54">=</font> <font color="#434f54">!</font><font color="#000000">garageopen</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; record the open, close, and enroll&#47;delete button states</font>
+&nbsp;<font color="#000000">buttonState</font> &nbsp;<font color="#434f54">=</font> <font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">button_1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;
+&nbsp;<font color="#000000">buttonState2</font> <font color="#434f54">=</font> <font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">button_2</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">buttonState3</font> <font color="#434f54">=</font> <font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">button_3</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47;check for rising edge on the enroll&#47;delete button</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">buttonState3</font> <font color="#434f54">&amp;&amp;</font> <font color="#434f54">!</font><font color="#000000">lag2</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">lag2</font> <font color="#434f54">=</font> <font color="#000000">1</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">timeStart</font> <font color="#434f54">=</font> <font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">buttonState3</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">buttonState3</font> <font color="#434f54">=</font> <font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">button_3</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">timeEnd</font> <font color="#434f54">=</font> <font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">timeDifferential</font> <font color="#434f54">=</font> <font color="#000000">timeEnd</font> <font color="#434f54">-</font> <font color="#000000">timeStart</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; if held for &gt; 10 seconds, send request to the fingerprint module to delete all fingerprints</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">timeDifferential</font> <font color="#434f54">&gt;</font> <font color="#000000">10000</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">write</font><font color="#000000">(</font><font color="#000000">3</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; if held for &lt; 10 seconds and &gt; 3 seconds, begin the finger enrollment</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">timeDifferential</font> <font color="#434f54">&gt;</font> <font color="#000000">3000</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">write</font><font color="#000000">(</font><font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Enroll();</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; if held for less than 3 seconds, open or close the door depending on the garage state</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">write</font><font color="#000000">(</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">garageopen</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#000000">i</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">i</font> <font color="#434f54">&lt;</font> <font color="#000000">steps</font><font color="#000000">;</font> <font color="#000000">i</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">closegarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#000000">i</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">i</font> <font color="#434f54">&lt;</font> <font color="#000000">steps</font><font color="#000000">;</font> <font color="#000000">i</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">opengarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; toggle the garage state after opening or closing</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">garageopen</font> <font color="#434f54">=</font> <font color="#434f54">!</font><font color="#000000">garageopen</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#434f54">!</font><font color="#000000">buttonState3</font> <font color="#434f54">&amp;&amp;</font> <font color="#000000">lag2</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lag2</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; open the garage for as long as this button is pressed</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">buttonState</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">opengarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; close the garage for as long as this button is pressed</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">buttonState2</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">closegarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>														
 							</code></pre>
 
-									</div>
-								</section>
-								<p> The Garage Motor Module runs two Stepper Motors concurrently stepping in opposite direction with respect to the Wooden
-									Roller of the Garage Model. Placed on opposite sides of the Roller, the opposing rotations of motors results in
-									the closing and opening of the Garage Panel. When an open or close sequence is initiated by the fingerprint module
-									each motor rotates exactly
-									<strong>6100 steps</strong>, which amounts to about 4 full rotations of the Wooden Roller. Also, it's important to note
-									that the simultaneous movements of the respective motors are an illusion; a motor steps exactly once, then the other
-									motor steps exactly once and this movement switches back and forth until the motors have reached exactly 6100 steps
-									in total.
-									<br/>
-									<br/> Additionally, the Garage Motor Module also handles the input from the three administer pushbuttons. First and second
-									buttons handle the manual opening and closing, respectively, of the garage panel without needing the Fingerprint
-									Scanner. The third button handles the fingerprint enrollment process when held for
-									<strong>&gt;3 seconds </strong>and
-									<strong>&lt;10 seconds</strong>. Finally, this button is also responsible clearing all fingerprints from the stored database
-									when pressed for
-									<strong>&gt;10 seconds</strong>.
-									<p>
-							</div>
-						</section>
+								</div>
+							</section>
+						</br>
+							<p> The Garage Motor Module runs two Stepper Motors simultaneously stepping in opposite direction with respect to the Wooden
+								Roller of the Garage Model. Placed on opposite sides of the Roller, the opposing rotations of motors results in the
+								closing and opening of the Garage Panel. When an open or close sequence is initiated by the fingerprint module each
+								motor rotates exactly
+								<strong>6100 steps</strong>, which amounts to about 4 full rotations of the Wooden Roller. Also, it's important to note that
+								the simultaneous movements of the respective motors are an illusion; a motor steps exactly once, then the other motor
+								steps exactly once and this movement switches back and forth until the motors have reached exactly 6100 steps in
+								total.
+								<br/>
+								<br/> Additionally, the Garage Motor Module also handles the input from the three administer pushbuttons. First and second
+								buttons handle the manual opening and closing, respectively, of the garage panel without needing the Fingerprint
+								Scanner. The third button handles the fingerprint enrollment process when held for
+								<strong>&gt;3 seconds </strong>and
+								<strong>&lt;10 seconds</strong>. Finally, this button is also responsible clearing all fingerprints from the stored database
+								when pressed for
+								<strong>&gt;10 seconds</strong>.
+								<p>
+						</div>
+					</section>
 
 
-						<section>
-							<header>
-								<h3>Purpose of Code:
-									<br/>Garage Fingerprint Module </h3>
-							</header>
-							<div class="content">
-								<section>
+					<section>
+						<header>
+							<h3>Purpose of Code:
+								<br/>Garage Fingerprint Module </h3>
+						</header>
+						<div class="content">
+							<section>
 
-									<div class="content">
+								<div class="content">
 
-										<pre><code>
-i = 0;
-while (!deck.isInOrder()) {
-	print 'Iteration ' + i;
-	deck.shuffle();
-	i++;
-}
-					
-print 'It took ' + i + ' iterations to sort the deck.';
+									<pre><code><font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47;Initializing the Libraries</font>
+&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">16</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47;Print the status of the garage</font>
+&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Closed &nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">Open</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">SetLED</font><font color="#000000">(</font><font color="#00979c">true</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47;Set Outputs</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">3</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">4</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">5</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+
+<font color="#00979c">void</font> <font color="#000000">openclosegarage</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;<font color="#000000">steps</font> &nbsp;<font color="#434f54">=</font> &nbsp;<font color="#000000">4096</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">garageMotor</font><font color="#434f54">.</font><font color="#d35400">setSpeed</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">garageMotor</font><font color="#434f54">.</font><font color="#d35400">step</font><font color="#000000">(</font><font color="#000000">(</font><font color="#000000">motorDirection</font> <font color="#434f54">*</font> <font color="#000000">steps</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">motorDirection</font> <font color="#434f54">=</font> <font color="#000000">motorDirection</font> <font color="#434f54">*</font> <font color="#434f54">-</font><font color="#000000">1</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#95a5a6">&#47;**</font>
+<font color="#95a5a6"> * Given two strings, prints the strings on the LCD</font>
+<font color="#95a5a6"> *&#47;</font>
+<font color="#00979c">void</font> <font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#00979c">String</font> <font color="#000000">topText</font><font color="#434f54">,</font> <font color="#00979c">String</font> <font color="#000000">bottomText</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;
+&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">0</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">topText</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">bottomText</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#95a5a6">&#47;**</font>
+<font color="#95a5a6"> &nbsp;&nbsp;Prints the current status of the garage panel</font>
+<font color="#95a5a6">*&#47;</font>
+<font color="#00979c">void</font> <font color="#000000">openclose</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;<font color="#000000">garageopen</font> <font color="#434f54">=</font> <font color="#434f54">!</font><font color="#000000">garageopen</font><font color="#000000">;</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">garageopen</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Shows that garage is opening when the garage is opening</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Opening &#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">2000</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">openclosegarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Display states that the garage is open</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Open &nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Shows that garage is closing when the garage is closing</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Closing &#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">2000</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">openclosegarage</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Display states that the garage is closed</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Closed &nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+&nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>
+
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;
+&nbsp;<font color="#434f54">&#47;&#47; Check for serial communications from the GarageMotorRunner module</font>
+&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">available</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">&gt;</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">inc</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">inc</font> <font color="#434f54">==</font> <font color="#000000">1</font><font color="#000000">)</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Open&#47;close the garage if given the serial value of 1</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">openclose</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">inc</font> <font color="#434f54">==</font> <font color="#000000">2</font><font color="#000000">)</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Enroll a finger when sent the 2 signal</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">Register_Finger</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">inc</font> <font color="#434f54">==</font> <font color="#000000">3</font><font color="#000000">)</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Delete all fingerprints when sent a value of 3</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">boolean</font> <font color="#000000">del</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">DeleteAll</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">del</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Success. &nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;All IDs deleted &#34;</font><font color="#000000">)</font><font color="#000000">;</font> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; No IDs have been deleted (may not be any IDs to delete)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Failure. &nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; No IDs deleted &#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Give the user 5 seconds to read the message</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">5000</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; Print the status of the gargae (open)</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">garageopen</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Open &nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; Print the status of the gargae (closed)</font>
+&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Garage Opener &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Garage: Closed &nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; Check to see if a finger is pressed on the sensor</font>
+&nbsp;<font color="#000000">touchState</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> 
+
+&nbsp;<font color="#434f54">&#47;&#47; check for a rising edge</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">touchState</font> <font color="#434f54">&amp;&amp;</font> <font color="#434f54">!</font><font color="#000000">touchLag</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">touchLag</font> <font color="#434f54">=</font> <font color="#000000">1</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; start the timer once the sensor is touched for the first time</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">timeStart</font> <font color="#434f54">=</font> <font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">touchState</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">touchState</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">timeEnd</font> <font color="#434f54">=</font> <font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">timeDifferential</font> <font color="#434f54">=</font> <font color="#000000">timeEnd</font> <font color="#434f54">-</font> <font color="#000000">timeStart</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; if the sensor has been touched continuously for the last 100 ms</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">timeDifferential</font> <font color="#434f54">==</font> <font color="#000000">100</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Capture the fingerprint for identification</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">bool</font> <font color="#000000">cap</font> <font color="#434f54">=</font> &nbsp;<font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">CaptureFinger</font><font color="#000000">(</font><font color="#00979c">false</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Identify if the fingerprint is stored in the sensor (returns 200 when Id not stored)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">int</font> <font color="#000000">id_number</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">Identify1_N</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">cap</font> <font color="#434f54">&amp;&amp;</font> <font color="#000000">id_number</font> <font color="#434f54">!=</font> <font color="#000000">200</font><font color="#000000">)</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Known guests have custom LCD Screen greetings</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">id_number</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Welcome &nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Patrick &nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Uncostomized guests have LCD Screen greeting with their ID number value</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">id_number</font> <font color="#434f54">&lt;</font> <font color="#000000">10</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Welcome &nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#000000">(</font><font color="#005c5f">&#34;Guest #&#34;</font> <font color="#434f54">+</font> <font color="#00979c">String</font><font color="#000000">(</font><font color="#000000">id_number</font><font color="#000000">)</font> <font color="#434f54">+</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">id_number</font> <font color="#434f54">&lt;</font> <font color="#000000">100</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Welcome &nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#000000">(</font><font color="#005c5f">&#34;Guest #&#34;</font> <font color="#434f54">+</font> <font color="#00979c">String</font><font color="#000000">(</font><font color="#000000">id_number</font><font color="#000000">)</font> <font color="#434f54">+</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Welcome &nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#000000">(</font><font color="#005c5f">&#34;Guest #&#34;</font> <font color="#434f54">+</font> <font color="#00979c">String</font><font color="#000000">(</font><font color="#000000">id_number</font><font color="#000000">)</font> <font color="#434f54">+</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">write</font><font color="#000000">(</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">2500</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">openclose</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; If the authentications fails in any way - print failure message</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; Access Denied &nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Print the access denied message for 2.5 seconds</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">2500</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#000000">}</font>
+&nbsp;
+&nbsp;<font color="#434f54">&#47;&#47; Reset the variable used to find the rising signal edge</font>
+&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#434f54">!</font><font color="#000000">touchState</font> <font color="#434f54">&amp;&amp;</font> <font color="#000000">touchLag</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">touchLag</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>
+
+<font color="#95a5a6">&#47;*</font>
+<font color="#95a5a6"> * Function called when the enrollment process is underway</font>
+<font color="#95a5a6"> *&#47;</font>
+<font color="#00979c">void</font> <font color="#000000">finger_delay</font><font color="#000000">(</font><font color="#00979c">bool</font> <font color="#000000">fingerPressed</font><font color="#000000">)</font> <font color="#000000">{</font> 
+
+&nbsp;<font color="#434f54">&#47;&#47; Wait 100 ms after a finger is sensed</font>
+&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#000000">fingerPressed</font><font color="#000000">)</font> <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">100</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#000000">Register_Finger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;<font color="#434f54">&#47;&#47; Start user ID numbers at 0</font>
+&nbsp;<font color="#00979c">int</font> <font color="#000000">finger_ID_number</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<font color="#00979c">bool</font> <font color="#000000">ID_number_in_use</font> <font color="#434f54">=</font> <font color="#00979c">true</font><font color="#000000">;</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; Iterate through used user IDs to find the next open ID number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">ID_number_in_use</font> <font color="#434f54">==</font> <font color="#00979c">true</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">ID_number_in_use</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">CheckEnrolled</font><font color="#000000">(</font><font color="#000000">finger_ID_number</font><font color="#000000">)</font><font color="#000000">;</font> 
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">ID_number_in_use</font> <font color="#434f54">==</font> <font color="#00979c">true</font><font color="#000000">)</font> <font color="#000000">finger_ID_number</font><font color="#434f54">++</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; Call the Enroll start function from the FPS library</font>
+&nbsp;<font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">EnrollStart</font><font color="#000000">(</font><font color="#000000">finger_ID_number</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;<font color="#434f54">&#47;&#47; First placement of the finger to enroll</font>
+&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Place the finger&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;to enroll on pad&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">false</font><font color="#000000">)</font> <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">100</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#00979c">bool</font> <font color="#000000">finger_capture_boolean</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">CaptureFinger</font><font color="#000000">(</font><font color="#00979c">true</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#00979c">int</font> <font color="#000000">store_success_int</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
+&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">finger_capture_boolean</font> <font color="#434f54">!=</font> <font color="#00979c">false</font><font color="#000000">)</font> <font color="#000000">{</font>
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Fingerprint is acceptable for storage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Remove finger...&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">Enroll1</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">true</font><font color="#000000">)</font> <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">100</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Second placement of the finger to enroll</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Place the same &nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;finger again &nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">false</font><font color="#000000">)</font> <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">100</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">finger_capture_boolean</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">CaptureFinger</font><font color="#000000">(</font><font color="#00979c">true</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">finger_capture_boolean</font> <font color="#434f54">!=</font> <font color="#00979c">false</font><font color="#000000">)</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">{</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Fingerprint is acceptable for storage</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Remove finger...&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">Enroll2</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">true</font><font color="#000000">)</font> <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">100</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Third enroll</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Last time... &nbsp;&nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;place finger &nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">IsPressFinger</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">false</font><font color="#000000">)</font> <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">100</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">finger_capture_boolean</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">CaptureFinger</font><font color="#000000">(</font><font color="#00979c">true</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Fingerprint is acceptable for storage</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">finger_capture_boolean</font> <font color="#434f54">!=</font> <font color="#00979c">false</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Remove finger...&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">store_success_int</font> <font color="#434f54">=</font> <font color="#000000">fps</font><font color="#434f54">.</font><font color="#000000">Enroll3</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Message diplayed when finger was successfully enrolled</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">store_success_int</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;Fingerprint &nbsp;&nbsp;&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;&nbsp;Stored! &nbsp;&nbsp;&nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Failed to store.&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;Try again. &nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Message diplayed when finger was not successfully enrolled (third placement)</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Failed to store.&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;Try again. &nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+
+&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; Message diplayed when finger was not successfully enrolled (second placement)</font>
+&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Failed to store.&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;Try again. &nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#000000">}</font>
+
+&nbsp;<font color="#434f54">&#47;&#47; Message diplayed when finger was not successfully enrolled (first placement)</font>
+&nbsp;<font color="#5e6d03">else</font> <font color="#000000">{</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<font color="#000000">lcd_print</font><font color="#000000">(</font><font color="#005c5f">&#34;Failed to store.&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34; &nbsp;&nbsp;Try again. &nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+&nbsp;<font color="#000000">}</font>
+&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">3000</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+														
 					</code></pre>
+								</div>
+							</section>
 
-									</div>
-								</section>
-
-								<p> The Garage Fingerprint Module communicates with the Garage Motor Module via the 0 (RX) and 1 (TX) pins on the two
-									UNO R3 Boards. The Garage Fingerprint Module communicates via <strong>software serial connection</strong> with the Fingerprint Scanner
-									on pins 10 and 11. This serial communication handles all the fingerprint transactions between the Scanner and Garage
-									Motor System.
-									<br/>
-									<br/> The LCD Screen is also controlled by the Fingerprint Module, the main purpose of the LCD is to print simple, yet
-									imformative messages to communicate the on-goings of the system to the user. Within the main event loop of the units
-									scans for fingerprints everytime a fingerprint is encountered on the Scanner. Once a fingerprint is sensed the event
-									loop will wait for a total of 100 ms to ensure that the finger has at least been pressed for that amount of time.
-									During which, the Fingerprint Scanner will capture the current fingerprint and match with all the fingerprints in
-									the database. If a match is found, the garage will begin it's open/close sequence based the current status of the
-									garage model. In the case that a fingerprint is not found in the database, the LCD will print <strong>"Access Denied"</strong>  and
-									time out within 2 seconds.
-									<br/>
-									<br/> Generally, from the moment the fingerprint hits the Scanner the user must have continuous contact with sensor for
-									at least 100 ms for the Fingerprint Scanner to correctly read the fingerprint from the sensor. Similarly, once the
-									user removes their finger from the sensor, the Scanner will not read any newly placed fingers for a total 100 ms
-									to ensure that the sensor is only taking an image of the same still finger.
-									<br/>
-									<br/> In the case the there is a serial message from the Garage Motor Module to enroll a fingerprint, the register_finger
-									method is called and the user may follow the on-screen prompts in order to sucessfully register their finger into
-									the database. Ultimately, this process requires the user to place and remove the same fingerprint three times in
-									a row. In the case that the user does not place the same finger everytime or the finger is not placed properly,
-									as to create a suitable image for comparison, an error message will display on the LCD Screen and the user will
-									have to restart the enrollment process.
-									<p>
-							</div>
-						</section>
-
-
-
-
-
-					</div>
-
-
+							<p> The Garage Fingerprint Module communicates with the Garage Motor Module via the 0 (RX) and 1 (TX) pins on the two
+								UNO R3 Boards. The Garage Fingerprint Module communicates via
+								<strong>software serial connection</strong> with the Fingerprint Scanner on pins 10 and 11. This serial communication handles
+								all the fingerprint transactions between the Scanner and Garage Motor System.
+								<br/>
+								<br/> The LCD Screen is also controlled by the Fingerprint Module, the main purpose of the LCD is to print simple, yet
+								imformative messages to communicate the on-goings of the system to the user. Within the main event loop of the units
+								scans for fingerprints everytime a fingerprint is encountered on the Scanner. Once a fingerprint is sensed the event
+								loop will wait for a total of 100 ms to ensure that the finger has at least been pressed for that amount of time.
+								During which, the Fingerprint Scanner will capture the current fingerprint and match with all the fingerprints in
+								the database. If a match is found, the garage will begin it's open/close sequence based the current status of the
+								garage model. In the case that a fingerprint is not found in the database, the LCD will print
+								<strong>"Access Denied"</strong> and time out within 2 seconds.
+								<br/>
+								<br/> Generally, from the moment the fingerprint hits the Scanner the user must have continuous contact with sensor for
+								at least 100 ms for the Fingerprint Scanner to correctly read the fingerprint from the sensor. Similarly, once the
+								user removes their finger from the sensor, the Scanner will not read any newly placed fingers for a total 100 ms
+								to ensure that the sensor is only taking an image of the same still finger.
+								<br/>
+								<br/> In the case the there is a serial message from the Garage Motor Module to enroll a fingerprint, the register_finger
+								method is called and the user may follow the on-screen prompts in order to sucessfully register their finger into
+								the database. Ultimately, this process requires the user to place and remove the same fingerprint three times in
+								a row. In the case that the user does not place the same finger everytime or the finger is not placed properly, as
+								to create a suitable image for comparison, an error message will display on the LCD Screen and the user will have
+								to restart the enrollment process.
+								<p>
+						</div>
+					</section>
 				</div>
-			</section>
+			</div>
+		</section>
 
 
 
+<!-- Footer -->
+<footer class="wrapper style1 align-center">
+		<div class="inner">
+			<div class="col-md-12 col-sm-8">
+				<h2>University of Illinois, Chicago</h2>
+				<p class="wow fadeInUp" data-wow-delay="0.6s">
+					College of Engineering
+					<br> 1200 West Harrison Street,
+					<br> Chicago, IL, USA
+				</p>
 
-			<!-- Footer -->
-			<footer class="wrapper style1 align-center">
-				<div class="inner">
-					<ul class="social-icon">
-						<li>
-							<a href="https://www.facebook.com/engineering.uic/" target="_blank" class="fa fa-facebook wow bounceIn" data-wow-delay="0.9s"></a>
-						</li>
-						<li>
-							<a href="https://twitter.com/uicengineering?lang=en" target="_blank" class="fa fa-twitter wow bounceIn" data-wow-delay="1.2s"></a>
-						</li>
-						<li>
-							<a href="https://engineering.uic.edu/" target="_blank" class="fa fa-globe wow bounceIn" data-wow-delay="1.4s"></a>
-						</li>
-					</ul>
-					<p> Copyright © 2018 Fingerprint Garage Door Opener </p>
+			</div>
+			<ul class="social-icon">
+				<li>
+					<a href="https://engineering.uic.edu/" target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="1.4s"></a>
+					</h2>
+				</li>
 
-				</div>
-			</footer>
+			</ul>
+			<!--	<p> Copyright © 2018 Fingerprint Garage Door Opener </p> -->
+		</div>
+	</footer>
+
 
 	</div>
 
@@ -297,8 +649,8 @@ print 'It took ' + i + ' iterations to sort the deck.';
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
-
 </body>
+<!-- end of body -->
 
 </html>
+<!-- end of html -->
