@@ -1,3 +1,6 @@
+/**  
+ * Authors: Jahnvi Patel and Patrick O'Connell
+ */
 
 
 (function($) {

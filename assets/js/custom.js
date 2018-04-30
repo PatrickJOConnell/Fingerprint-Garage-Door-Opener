@@ -1,4 +1,6 @@
-
+/**
+ * Authors: Jahnvi Patel and Patrick O'Connell
+ */
  /* jQuery Pre loader
   -----------------------------------------------*/
 $(window).load(function(){
